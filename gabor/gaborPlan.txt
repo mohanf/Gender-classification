@@ -1,0 +1,15 @@
+Plan for gabor method:
+
+=> resize to 20 x 20 pixel image (do not need detailed info)
+=> apply gabor and get response image(magnitude)
+=> normalize to mean 0 + unit variance
+=>
+	a. PCA
+	b. variance and mean (not recommended)
+	c. variance of each column and mean of whole image
+
+* Possibly do it on frequency domain using FFT
+* Possibly use downsampling
+* Possibly valid convolution
+* Possibly remove the first eigenvector
+* PCA + LDA: W = W1 * W2
